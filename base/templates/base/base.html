@@ -1,0 +1,57 @@
+{% load static %}
+{% load thumbnail %}
+
+<!DOCTYPE html>
+<html lang="en" ltr="dir">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if site.site_title %}{{ site.site_title }}{% else %}ePortfolio{% endif %}</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="{% if site.theme_color %}{{ site.theme_color }}{% else %}#ffffff{% endif %}">
+
+    <!-- Manifest -->
+    <link rel="manifest"
+        href="{% if site.manifest %}{{ site.manifest }}{% else %}{% static 'base/manifest.webmanifest' %}{% endif %}">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="{% thumbnail site.site_icon '32x32' crop='smart' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% thumbnail site.site_icon '152x152' crop='smart' %}">
+
+    <!-- Base Vendor CSS Files -->
+    <link rel="stylesheet" href="{% static 'base/vendor/bootstrap-icons/bootstrap-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/vendor/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/vendor/aos/aos.css' %}">
+
+    <!-- Base Template Main CSS File -->
+    <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+
+    <!-- Other app's CSS Files -->
+    {% block stylesheet %}
+    {% endblock stylesheet %}
+
+    <!-- Base Vendor JS Files -->
+    <script defer src="{% static 'base/vendor/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    <script defer src="{% static 'base/vendor/aos/aos.js' %}"></script>
+
+    <!-- Base Template Main JS File -->
+    <script defer src="{% static 'base/js/script.js' %}"></script>
+
+    <!-- Other app's JS Files -->
+    {% block script %}
+    {% endblock script %}
+</head>
+
+<body>
+
+    <main id="main">
+        {% block main %}
+        {% endblock main %}
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+django
+psycopg2-binary
+python-decouple
+pillow
+easy-thumbnails
+django-ckeditor
+gunicorn

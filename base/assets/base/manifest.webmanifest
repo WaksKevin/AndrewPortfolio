@@ -1,0 +1,16 @@
+{
+    "scope": "/",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "sizes": "512x512",
+            "type": "image/png",
+            "src": "./img/icon.png"
+        }
+    ],
+    "name": "John Doe",
+    "short_name": "John",
+    "theme_color": "#EDE9DD",
+    "background_color": "#262626"
+}

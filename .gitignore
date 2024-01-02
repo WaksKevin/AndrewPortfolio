@@ -1,0 +1,8 @@
+.vscode
+~
+static
+media
+*sqlite*
+*env
+__pycache__/
+fixtures
