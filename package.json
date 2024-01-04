@@ -1,0 +1,21 @@
+{
+  "name": "andrewportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./base/assets/base/scss/bootstrap.custom.scss ./base/assets/base/vendor/bootstrap/bootstrap.custom.min.css --style compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaksKevin/AndrewPortfolio.git"
+  },
+  "keywords": [],
+  "author": "Kevin Wakhisi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WaksKevin/AndrewPortfolio/issues"
+  },
+  "homepage": "https://github.com/WaksKevin/AndrewPortfolio#readme"
+}
